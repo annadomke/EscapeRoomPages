@@ -1,15 +1,12 @@
 // Fragen und Antworten
 const questions = [
-    {
-        question: "Du bist in einem Käfig eingesperrt. Um den Ausgang zu öffnen, musst du den geheimen Code herausfinden. Auf dem Käfig sind Zahlen eingraviert. Doch der Code ist nicht einfach. Der Code hat 4 Ziffern. Die Ziffern im Code sind die aufeinanderfolgenden Zahlen der Fibonacci-Reihe. Der Code beginnt mit der Zahl, die der 4. Zahl in der Reihe entspricht. Was ist der Code?",
-        correctAnswer: "2 3 5 8"
-    },
-    {
+   {
         question: "Was ist das Gegenteil von 'Ja', aber kein 'Nein'?",
         correctAnswer: "Vielleicht"
     },
     {
-        question: "Die Summe der Zahlen von 1 bis x ergibt 55. Welche Zahl ist x?",
+        question: "Um die Tür zu öffnen, musst du den 'Schlüssel' finden. Die Zahl auf dem Käfig gibt dir einen Hinweis:
+'Die Summe der Zahlen von 1 bis x ergibt 55. Welche Zahl ist x?'",
         correctAnswer: "10"
     },
     {
@@ -17,8 +14,24 @@ const questions = [
         correctAnswer: "1"
     },
     {
+        question: "Du kannst durch den Käfig hindurch sehen, doch du kannst ihn nicht durchbrechen.Ich bin das, was du denkst, aber ich bin nicht real.Manchmal blockiere ich deinen Weg, aber du hast die Macht, mich zu überwinden. Was bin ich?",
+        correctAnswer: "Angst"
+    },
+    {
+        question: "Ein Code besteht aus vier Ziffern. Jede Ziffer entspricht einer Zahl, die du durch diese Gleichung ermitteln kannst: Die 1. Ziffer = 2 + 2. Die 2. Ziffer = 4 mal 2. Die 3. Ziffer = 9 – 3. Die 4. Ziffer = 2 mal 3. Welche Ziffern ergeben den Code?",
+        correctAnswer: "4866"
+    },
+    {
+        question: "Welche Zahlt fehlt in der Reihe _, 3, 5, 7, 11, 13, 17, 19, 23 ?",
+        correctAnswer: "2"
+    },
+     {
         question: "Ich bin unsichtbar, aber du siehst mich jeden Tag. Was bin ich?",
         correctAnswer: "Zukunft"
+    },
+     {
+        question: "Ich bin in allen Wörtern zu finden, aber kaum jemand spricht mich aus. Was bin ich?",
+        correctAnswer: "H"
     },
     {
         question: "Ich fließe, aber nie ohne Unterbrechung. Ich bin immer in Bewegung, aber komme nie an. Was bin ich?",
@@ -33,9 +46,15 @@ const questions = [
         correctAnswer: "Komma"
     },
     {
-        question: "Welche Zahlt fehlt in der Reihe _, 3, 5, 7, 11, 13, 17, 19, 23 ?",
-        correctAnswer: "2"
+        question: "Du bist in einem Käfig eingesperrt. Um den Ausgang zu öffnen, musst du den geheimen Code herausfinden. Auf dem Käfig sind Zahlen eingraviert. Doch der Code ist nicht einfach. Der Code hat 4 Ziffern. Die Ziffern im Code sind die aufeinanderfolgenden Zahlen der Fibonacci-Reihe. Der Code beginnt mit der Zahl, die der 4. Zahl in der Reihe entspricht. Was ist der Code?",
+        correctAnswer: "2358"
     },
+    {
+        question: "Ich werde oft von Menschen getragen, aber niemand kann mich je tragen. Was bin ich?",
+        correctAnswer: "Name"
+    },
+    
+    
 ];
 
 let currentQuestionIndex = 0;

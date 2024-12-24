@@ -1,11 +1,13 @@
 /* Hintergrund */
 body {
     background-color: #001f3d; /* Dunkelblau */
-    color: white; /* Weißer Text */
+    background-image: url('https://github.com/DEIN_USERNAME/DEIN_REPOSITORY_NAME/raw/main/dein_bild.png'); /* Verlinkung zum Hintergrundbild */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white; 
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    height: 100vh; /* Vollbildhöhe */
+    height: 100vh; /* Höhe des Bildschirms */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,3 +91,4 @@ button:hover {
     font-size: 20px;
     margin-bottom: 15px;
 }
+

@@ -21,7 +21,7 @@ body {
 /* Hintergrund mit schneefallähnlichen Elementen */
 body::before {
     content: "";
-    background-image: url('path/to/your/snowfall.png'); /* baumähnliche Silhouetten und Schneeflocken */
+    background-image: url('https://github.com/annadomke/EscapeRoomPages/blob/main/snowfall.png'); /* baumähnliche Silhouetten und Schneeflocken */
     background-size: cover;
     background-repeat: no-repeat;
     position: fixed;

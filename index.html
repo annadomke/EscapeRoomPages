@@ -23,16 +23,45 @@
     <div class="snowflake">❄️</div>
     <div class="snowflake">❄️</div>
     <div class="snowflake">❄️</div> 
+    <div class="snowflake">❄️</div>
+    <div class="snowflake">❄️</div>
+    <div class="snowflake">❄️</div>
+    <div class="snowflake">❄️</div>
+    <div class="snowflake">❄️</div> 
+    <div class="snowflake">❄️</div>
+    <div class="snowflake">❄️</div>
+    <div class="snowflake">❄️</div>
+    <div class="snowflake">❄️</div>
+    <div class="snowflake">❄️</div> 
+    <div class="snowflake">❄️</div>
+    <div class="snowflake">❄️</div>
+    <div class="snowflake">❄️</div>
+    <div class="snowflake">❄️</div>
+    <div class="snowflake">❄️</div> 
     <div class="container">
-        <h1>Escape Room Rätsel</h1>
-        <div id="question-container">
-            <p id="question">Lade Frage...</p>
-            <input type="text" id="answer" placeholder="Antwort eingeben...">
-            <button onclick="checkAnswer()">Antwort überprüfen</button>
-        </div>
-        <p id="result"></p>
+        
+        <div class="container">
+        <div class="question">Was ist das Gegenteil von "Ja", aber kein "Nein"?</div>
+        <input type="text" id="answer" placeholder="Gib deine Antwort ein">
+        <button onclick="checkAnswer()">Antwort prüfen</button>
+        <div id="result"></div>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+        // Beispiel einer Funktion zum Überprüfen der Antwort
+        function checkAnswer() {
+            const answer = document.getElementById("answer").value.toLowerCase();
+            const correctAnswer = "vielleicht"; // Die richtige Antwort
+
+            if (answer === correctAnswer) {
+                document.getElementById("result").innerText = "Richtig!";
+                document.getElementById("result").style.color = "green";
+                // Hier könnte eine Funktion kommen, die zur nächsten Frage führt
+            } else {
+                document.getElementById("result").innerText = "Leider falsch, versuche es nochmal!";
+                document.getElementById("result").style.color = "red";
+            }
+        }
+    </script>
 </body>
 </html>

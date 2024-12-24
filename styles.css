@@ -1,71 +1,91 @@
-/* Grundlayout */
+/* Hintergrund */
 body {
-    background-color: #001f3f; /* Dunkelblau für den Hintergrund */
-    color: white; /* Weiße Schriftfarbe für Kontraste */
+    background-color: #001f3d; /* Dunkelblau */
+    color: white; /* Weißer Text */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    height: 100vh;
-    overflow: hidden;
-}
-
-/* Mittig zentrierte Elemente */
-.container {
+    height: 100vh; /* Vollbildhöhe */
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    height: 100vh;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
 }
 
-/* Hintergrund mit schneefallähnlichen Elementen */
-body::before {
-    content: "";
-    background-image: url('https://github.com/annadomke/EscapeRoomPages/blob/main/snowfall.png'); /* baumähnliche Silhouetten und Schneeflocken */
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+/* Schneeflocken-Effekt */
+@keyframes snowfall {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+    100% {
+        transform: translateY(100vh) translateX(50px);
+    }
 }
 
-/* Schrift für Fragen und Eingabefeld */
-h1, p {
+.snowflake {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    color: white;
+    font-size: 24px;
+    opacity: 0.8;
+    animation: snowfall linear infinite;
+    pointer-events: none;
+}
+
+.snowflake:nth-child(odd) {
+    animation-duration: 6s;
+    animation-delay: 0s;
+}
+
+.snowflake:nth-child(even) {
+    animation-duration: 8s;
+    animation-delay: 2s;
+}
+
+/* Frage und Antwortbox */
+.container {
+    background: rgba(0, 0, 0, 0.5); /* Halbtransparenter Hintergrund */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
     text-align: center;
 }
 
-/* Frage und Eingabefeld zentrieren */
-.question-box {
-    background-color: rgba(0, 0, 0, 0.7); /* Halbtransparenter schwarzer Hintergrund */
-    padding: 20px;
-    border-radius: 10px;
-    width: 80%;
-    max-width: 600px;
-}
-
-/* Elemente mittig anordnen */
-.question-text, input {
-    display: block;
-    margin: 0 auto;
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
     width: 100%;
-    max-width: 600px;
+    margin: 10px 0;
 }
 
-/* Stil für den Submit-Button */
 button {
-    background-color: #ffcc00;
-    color: black;
-    padding: 10px 20px;
+    background-color: #4CAF50; /* Grüner Button */
+    color: white;
     border: none;
+    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    margin-top: 20px;
 }
 
 button:hover {
-    background-color: #ffc107;
+    background-color: #45a049;
+}
+
+/* Zentrierte Textbox */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Fragen und Antworten */
+.question {
+    font-size: 20px;
+    margin-bottom: 15px;
 }

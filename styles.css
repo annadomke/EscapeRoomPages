@@ -1,31 +1,71 @@
+/* Grundlayout */
 body {
+    background-color: #001f3f; /* Dunkelblau für den Hintergrund */
+    color: white; /* Weiße Schriftfarbe für Kontraste */
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Mittig zentrierte Elemente */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Hintergrund mit schneefallähnlichen Elementen */
+body::before {
+    content: "";
+    background-image: url('path/to/your/snowfall.png'); /* baumähnliche Silhouetten und Schneeflocken */
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Schrift für Fragen und Eingabefeld */
+h1, p {
+    text-align: center;
+}
+
+/* Frage und Eingabefeld zentrieren */
+.question-box {
+    background-color: rgba(0, 0, 0, 0.7); /* Halbtransparenter schwarzer Hintergrund */
     padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
 }
 
-h1 {
-    color: #4CAF50;
+/* Elemente mittig anordnen */
+.question-text, input {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
 }
 
-#question1 {
+/* Stil für den Submit-Button */
+button {
+    background-color: #ffcc00;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
     margin-top: 20px;
 }
 
-input {
-    padding: 5px;
-    margin: 5px;
-}
-
-button {
-    padding: 5px 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
 button:hover {
-    background-color: #45a049;
+    background-color: #ffc107;
 }
